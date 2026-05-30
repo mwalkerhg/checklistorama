@@ -1,6 +1,8 @@
 {
   "name": "checklistorama",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A cozy checklist app",
+  "author": "mwalkerhg",
   "private": true,
   "type": "module",
   "main": "electron/main.cjs",
@@ -55,7 +57,7 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "public/favicon.ico"
+      "icon": "build/icon.ico"
     }
   },
   "engines": {
