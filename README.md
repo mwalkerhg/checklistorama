@@ -1,48 +1,43 @@
-# checklistorama
+# Checklistorama
 
-This template should help get you started developing with Vue 3 in Vite.
+A portfolio of checklist applications, each built with a different tech stack. Same concept, different frameworks — a hands-on way to explore and compare modern development tools.
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Showcase
 
-## Recommended Browser Setup
+### Cozy Checklist
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+A warm, inviting checklist app with an earthy aesthetic and a friendly frog mascot.
 
-## Type Support for `.vue` Imports in TS
+**Tech Stack:** Vue 3 | TypeScript | Vite | Pinia | Vue Router | Electron
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+<!-- Replace the placeholder below with your actual screenshot or gif -->
+<!-- To add a screenshot: save it to docs/images/ and update the path -->
+![Cozy Checklist screenshot](docs/images/cozy_checklist_preview.gif)
 
-## Customize configuration
+#### Features
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- Create, rename, and delete multiple checklists
+- Add, check off, and remove items within each checklist
+- Strikethrough styling on completed items
+- Data persisted to localStorage
+- Cozy, warm color palette with serif typography
+- Runs as a native desktop app via Electron
 
-## Project Setup
+#### Running Locally
 
 ```sh
+cd cozy_checklist
 npm install
+npm run dev              # Start the Vite dev server
+npm run electron:dev     # Launch in Electron (run after dev server is up)
 ```
 
-### Compile and Hot-Reload for Development
+---
 
-```sh
-npm run dev
-```
+*More checklist apps coming soon — stay tuned.*
 
-### Type-Check, Compile and Minify for Production
+## License
 
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+MIT
