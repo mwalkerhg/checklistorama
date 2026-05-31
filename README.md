@@ -12,9 +12,7 @@ A warm, inviting checklist app with an earthy aesthetic and a friendly frog masc
 
 **Tech Stack:** Vue 3 | TypeScript | Vite | Pinia | Vue Router | Electron
 
-<!-- Replace the placeholder below with your actual screenshot or gif -->
-<!-- To add a screenshot: save it to docs/images/ and update the path -->
-![Cozy Checklist screenshot](docs/images/cozy_checklist_preview.gif)
+<img src="docs/images/cozy_checklist_preview.gif" alt="Cozy Checklist preview" width="600" />
 
 #### Features
 
@@ -32,6 +30,42 @@ cd cozy_checklist
 npm install
 npm run dev              # Start the Vite dev server
 npm run electron:dev     # Launch in Electron (run after dev server is up)
+```
+
+---
+
+### Smart Checklist
+
+A clean, minimal checklist app with AI-powered checklist generation using a local LLM.
+
+**Tech Stack:** SvelteKit | TypeScript | Tailwind CSS | Drizzle ORM | SQLite | Ollama | Docker
+
+<img src="docs/images/smart_checklist_preview.gif" alt="Smart Checklist preview" width="600" />
+
+#### Features
+
+- Create, view, and delete checklists
+- Add, check off, and remove items
+- AI-generated checklists from a text description (powered by Ollama + llama3.2)
+- Data persisted in SQLite via Drizzle ORM
+- Fully containerized — one `docker compose up` runs the entire stack
+- GPU acceleration support for faster AI generation
+
+#### Running Locally
+
+```sh
+# With Docker (recommended — no setup needed):
+cd smart_checklist
+docker compose up
+
+# With GPU:
+docker compose -f docker-compose.yml -f docker-compose.gpu.yml up
+
+# Without Docker (manual):
+cd smart_checklist
+npm install
+ollama pull llama3.2     # Download the AI model
+npm run dev              # Start the dev server
 ```
 
 ---
