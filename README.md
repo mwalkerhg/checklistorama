@@ -70,7 +70,34 @@ npm run dev              # Start the dev server
 
 ---
 
-*More checklist apps coming soon — stay tuned.*
+### Gamified Checklist
+
+A game-themed checklist app with XP, levels, streaks, and swappable visual themes.
+
+**Tech Stack:** React | TypeScript | Vite | Tauri (Rust)
+
+<img src="docs/images/gamified_checklist_preview.gif" alt="Gamified Checklist preview" width="600" />
+
+#### Features
+
+- Create, delete, and switch between multiple checklists
+- Add, check off, and remove items within each checklist
+- Strikethrough styling on completed items
+- Gamification — earn 10 XP per completed item, level up, and track daily streaks
+- XP progress bar and player stats display
+- Swappable themes: Galaxy, Mario, and Zelda
+- Data and theme preference persisted to localStorage
+- Runs as a native desktop app via Tauri
+
+#### Running Locally
+
+```sh
+cd gamified_checklist
+npm install
+npm run tauri dev        # Launch in Tauri dev mode
+```
+
+---
 
 ## License
 

@@ -1,0 +1,226 @@
+/* Theme: Galaxy (default) */
+[data-theme="galaxy"] {
+    --bg-gradient: linear-gradient(135deg, #1a1a2e, #16213e);
+    --text-color: #e0e0e0;
+    --heading-color: #ffd700;
+    --heading-glow: rgba(255, 215, 0, 0.3);
+    --subheading-color: #7ec8e3;
+    --input-bg: #2a2a4a;
+    --input-border: #444;
+    --input-focus: #7ec8e3;
+    --btn-bg: #4a4a8a;
+    --btn-hover: #6a6aba;
+    --card-bg: #2a2a4a;
+    --card-hover: #3a3a5a;
+    --card-border: #4a4a8a;
+    --checkbox-color: #ffd700;
+    --xp-bar-bg: #1a1a2e;
+    --xp-bar-fill: linear-gradient(90deg, #4a4a8a, #7ec8e3);
+    --level-color: #ffd700;
+    --streak-color: #ff6b6b;
+    --font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* Theme: Mario */
+[data-theme="mario"] {
+    --bg-gradient: linear-gradient(135deg, #5c94fc, #5c94fc);
+    --text-color: #ffffff;
+    --heading-color: #e52521;
+    --heading-glow: rgba(229, 37, 33, 0.4);
+    --subheading-color: #fbd000;
+    --input-bg: #049cd8;
+    --input-border: #003366;
+    --input-focus: #fbd000;
+    --btn-bg: #e52521;
+    --btn-hover: #ff4440;
+    --card-bg: #43b047;
+    --card-hover: #5cc960;
+    --card-border: #2a7a2e;
+    --checkbox-color: #fbd000;
+    --xp-bar-bg: #003366;
+    --xp-bar-fill: linear-gradient(90deg, #fbd000, #e52521);
+    --level-color: #fbd000;
+    --streak-color: #ff6b6b;
+    --font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* Theme: Zelda */
+[data-theme="zelda"] {
+    --bg-gradient: linear-gradient(135deg, #2d4a22, #1a3010);
+    --text-color: #e8dcc8;
+    --heading-color: #c8a84e;
+    --heading-glow: rgba(200, 168, 78, 0.4);
+    --subheading-color: #6ec87a;
+    --input-bg: #3a5a2e;
+    --input-border: #5a7a44;
+    --input-focus: #c8a84e;
+    --btn-bg: #5a3a1e;
+    --btn-hover: #7a5a3e;
+    --card-bg: #3a5a2e;
+    --card-hover: #4a6a3e;
+    --card-border: #5a7a44;
+    --checkbox-color: #c8a84e;
+    --xp-bar-bg: #1a3010;
+    --xp-bar-fill: linear-gradient(90deg, #c8a84e, #6ec87a);
+    --level-color: #c8a84e;
+    --streak-color: #e05050;
+    --font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+
+:root {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background: var(--bg-gradient);
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--heading-color);
+    text-shadow: 0 0 10px var(--heading-glow);
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--subheading-color);
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    background: var(--input-bg);
+    color: var(--text-color);
+    font-size: 0.95rem;
+    outline: none;
+    margin-right: 8px;
+}
+
+input[type="text"]:focus {
+    border-color: var(--input-focus);
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: var(--btn-bg);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: var(--btn-hover);
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    margin: 4px 0;
+    background: var(--card-bg);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+li:hover {
+    background: var(--card-hover);
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--checkbox-color);
+    cursor: pointer;
+}
+
+/* Player Stats Bar */
+.stats-bar {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+
+.stats-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.stats-info span:first-child {
+    color: var(--level-color);
+    font-weight: bold;
+}
+
+.stats-info span:last-child {
+    color: var(--streak-color);
+}
+
+.xp-bar-bg {
+    height: 12px;
+    background: var(--xp-bar-bg);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.xp-bar-fill {
+    height: 100%;
+    background: var(--xp-bar-fill);
+    border-radius: 6px;
+    transition: width 0.4s ease;
+}
+
+/* Theme Selector */
+.theme-selector {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.theme-selector select {
+    padding: 6px 12px;
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    background: var(--card-bg);
+    color: var(--heading-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.theme-selector select option {
+    background: var(--card-bg);
+    color: var(--text-color);
+}
+
+.theme-selector select:focus {
+    border-color: var(--input-focus);
+}
